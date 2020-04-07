@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/lyt"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/images_to_pdf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_menu_camera"
+                app:option_text="Images to PDF" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/text_to_pdf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_text_format_black_24dp"
+                app:option_text="@string/text_to_pdf" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/pdf_to_images"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_image_black_24dp"
+                app:option_text="@string/pdf_to_images" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/view_files"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_menu_gallery"
+                app:option_text="@string/viewFiles" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/add_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_lock_black_24dp"
+                app:option_text="@string/add_password" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/remove_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_lock_open_black_24dp"
+                app:option_text="@string/remove_password" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/view_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_history_black_24dp"
+                app:option_text="@string/history" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/add_watermark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_branding_watermark_black_24dp"
+                app:option_text="@string/add_watermark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/merge_pdf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_merge_type_black_24dp"
+                app:option_text="@string/merge_pdf" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/split_pdf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_call_split_black_24dp"
+                app:option_text="@string/split_pdf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/invert_pdf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_invert_color_24dp"
+                app:option_text="@string/invert_pdf" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/compress_pdf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_compress_image"
+                app:option_text="@string/compress_pdf" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/remove_duplicates_pages_pdf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_remove_duplicate_square_black"
+                app:option_text="@string/remove_duplicate_pages" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/add_images"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_add_black_24dp"
+                app:option_text="@string/add_images" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/remove_pages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_remove_circle_black_24dp"
+                app:option_text="@string/remove_pages" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/rearrange_pages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_sort"
+                app:option_text="@string/reorder_pages" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/extract_images"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/ic_broken_image_black_24dp"
+                app:option_text="@string/extract_images" />
+
+            <com.prigic.pdfmanager.util.CardView
+                android:id="@+id/rotate_pages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                app:option_icon="@drawable/baseline_crop_rotate_24"
+                app:option_text="@string/rotate_pages" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
